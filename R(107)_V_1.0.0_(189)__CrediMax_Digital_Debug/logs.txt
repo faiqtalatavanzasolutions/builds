@@ -23,7 +23,7 @@ BuildArchive.sh | archivePath: Release/Archives/107/CrediMax_Digital_Debug_versi
 ExportArchiveADHOC.sh | exportIPAPath: Release/builds/107/
 ExportArchiveADHOC.sh | newIPAFilePath: Release/builds/107/CrediMax_Digital_Debug_version(1.0.0)_build(189)_request(107)_ADHOC.ipa
 Upload.sh | ipaFilenameADHOC: CrediMax_Digital_Debug_version(1.0.0)_build(189)_request(107)_ADHOC.ipa
-folderPath: server/githubhosting/builds/R(107)_V_(189)__CrediMax_Digital_Debug
+folderPath: server/githubhosting/builds/R(107)_V_1.0.0_(189)__CrediMax_Digital_Debug
 configFilePath: .commands/config/response/debug.json
 ipaPathADHOC: Release/builds/107/CrediMax_Digital_Debug_version(1.0.0)_build(189)_request(107)_ADHOC.ipa
 manifestFilePath: .private/manifest.plist
