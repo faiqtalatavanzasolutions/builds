@@ -1,0 +1,41 @@
+
+ -------------------------------------------------------------
+|       UBG - Unify Build Generation LOGS     -> START <-     |
+ -------------------------------------------------------------
+
+
+------------- CONFIGURATION START -----------
+
+{
+  "name": "CrediMax Digital Debug",
+  "version": "1.0.0",
+  "build": "189",
+  "identifier": "com.avanza.CrediMaxApp",
+  "jsonURL": "http://172.16.11.67:9997/651aa9592836a142540ec0cd/Credimax-MB-1.17.0.json",
+  "export": [
+    "dropbox"
+  ],
+  "environment": "Debug"
+}
+------------- CONFIGURATION END -----------
+
+BuildArchive.sh | archivePath: Release/Archives/107/CrediMax_Digital_Debug_version(1.0.0)_build(189)_request(107).xcarchive
+ExportArchiveADHOC.sh | exportIPAPath: Release/builds/107/
+ExportArchiveADHOC.sh | newIPAFilePath: Release/builds/107/CrediMax_Digital_Debug_version(1.0.0)_build(189)_request(107)_ADHOC.ipa
+Upload.sh | ipaFilenameADHOC: CrediMax_Digital_Debug_version(1.0.0)_build(189)_request(107)_ADHOC.ipa
+folderPath: server/githubhosting/builds/R(107)_V_(189)__CrediMax_Digital_Debug
+configFilePath: .commands/config/response/debug.json
+ipaPathADHOC: Release/builds/107/CrediMax_Digital_Debug_version(1.0.0)_build(189)_request(107)_ADHOC.ipa
+manifestFilePath: .private/manifest.plist
+qrcodeImagePath: .commands/uploads/qrcode/CrediMax_Digital_Debug_version(1.0.0)_build(189)_request(107)_qrcode.png
+currentSummaryPath: Summary/current.json
+requestLogFilePath: logs/LOG_CrediMax_Digital_Debug_version(1.0.0)_build(189)_request(107).log
+
+
+
+ -------------------------------------------------------------
+|         UBG - Unify Build Generation LOGS     -> END <-     |
+ -------------------------------------------------------------
+
+
+UploadLogs.sh | logFilePath: logs/UBG.log | requestLogFilePath: logs/LOG_CrediMax_Digital_Debug_version(1.0.0)_build(189)_request(107).log
