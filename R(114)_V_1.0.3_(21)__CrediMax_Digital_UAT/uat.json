@@ -1,0 +1,11 @@
+{
+  "name": "CrediMax Digital UAT",
+  "version": "1.0.3",
+  "build": "21",
+  "identifier": "com.avanza.credimaxappuat",
+  "jsonURL": "https://mproxy.credimax.com.bh/credimax.json",
+  "export": [
+    "dropbox"
+  ],
+  "environment": "UAT"
+}
