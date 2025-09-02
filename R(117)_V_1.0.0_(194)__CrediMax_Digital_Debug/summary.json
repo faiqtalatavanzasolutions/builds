@@ -1,0 +1,18 @@
+{
+  "id": "117",
+  "name": "CrediMax Digital Debug",
+  "version": "1.0.0",
+  "build": "194",
+  "identifier": "com.avanza.CrediMaxApp",
+  "environment": "Debug",
+  "status": "ADHOC_IPA_BUILD",
+  "isRunning": "false",
+  "isCompleted": "true",
+  "urlRequest": "https://raw.githubusercontent.com/faiqtalatavanzasolutions/builds/main/R(117)_V_1.0.0_(194)__CrediMax_Digital_Debug/request.json",
+  "urlIPA": "https://raw.githubusercontent.com/faiqtalatavanzasolutions/builds/main/R(117)_V_1.0.0_(194)__CrediMax_Digital_Debug/build.ipa",
+  "urlManifest": "https://raw.githubusercontent.com/faiqtalatavanzasolutions/builds/main/R(117)_V_1.0.0_(194)__CrediMax_Digital_Debug/manifest.plist",
+  "url": "itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/faiqtalatavanzasolutions/builds/main/R(117)_V_1.0.0_(194)__CrediMax_Digital_Debug/manifest.plist",
+  "urlQRCode": "https://raw.githubusercontent.com/faiqtalatavanzasolutions/builds/main/R(117)_V_1.0.0_(194)__CrediMax_Digital_Debug/qrcode.png",
+  "urlSummary": "https://raw.githubusercontent.com/faiqtalatavanzasolutions/builds/main/R(117)_V_1.0.0_(194)__CrediMax_Digital_Debug/summary.json",
+  "urlLOGS": "https://raw.githubusercontent.com/faiqtalatavanzasolutions/builds/main/R(117)_V_1.0.0_(194)__CrediMax_Digital_Debug/logs.txt"
+}
