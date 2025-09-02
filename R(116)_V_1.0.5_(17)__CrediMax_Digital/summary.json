@@ -1,0 +1,18 @@
+{
+  "id": "116",
+  "name": "CrediMax Digital",
+  "version": "1.0.5",
+  "build": "17",
+  "identifier": "com.avanza.CrediMaxApp",
+  "environment": "Live",
+  "status": "ADHOC_IPA_BUILD",
+  "isRunning": "false",
+  "isCompleted": "true",
+  "urlRequest": "https://raw.githubusercontent.com/faiqtalatavanzasolutions/builds/main/R(116)_V_1.0.5_(17)__CrediMax_Digital/request.json",
+  "urlIPA": "https://raw.githubusercontent.com/faiqtalatavanzasolutions/builds/main/R(116)_V_1.0.5_(17)__CrediMax_Digital/build.ipa",
+  "urlManifest": "https://raw.githubusercontent.com/faiqtalatavanzasolutions/builds/main/R(116)_V_1.0.5_(17)__CrediMax_Digital/manifest.plist",
+  "url": "itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/faiqtalatavanzasolutions/builds/main/R(116)_V_1.0.5_(17)__CrediMax_Digital/manifest.plist",
+  "urlQRCode": "https://raw.githubusercontent.com/faiqtalatavanzasolutions/builds/main/R(116)_V_1.0.5_(17)__CrediMax_Digital/qrcode.png",
+  "urlSummary": "https://raw.githubusercontent.com/faiqtalatavanzasolutions/builds/main/R(116)_V_1.0.5_(17)__CrediMax_Digital/summary.json",
+  "urlLOGS": "https://raw.githubusercontent.com/faiqtalatavanzasolutions/builds/main/R(116)_V_1.0.5_(17)__CrediMax_Digital/logs.txt"
+}

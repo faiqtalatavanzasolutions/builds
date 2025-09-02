@@ -1,0 +1,11 @@
+{
+  "name": "CrediMax Digital",
+  "version": "1.0.5",
+  "build": "17",
+  "identifier": "com.avanza.CrediMaxApp",
+  "jsonURL": "https://digital.credimax.com.bh/mobile/credimax.json",
+  "export": [
+    "dropbox"
+  ],
+  "environment": "Live"
+}
