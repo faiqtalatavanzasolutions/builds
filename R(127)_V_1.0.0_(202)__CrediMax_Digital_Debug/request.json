@@ -1,0 +1,11 @@
+{
+  "name": "CrediMax Digital Debug",
+  "version": "1.0.0",
+  "build": "202",
+  "identifier": "com.avanza.CrediMaxApp",
+  "jsonURL": "http://172.16.11.67:9997/651aa9592836a142540ec0cd/Credimax-MB-1.17.0.json",
+  "export": [
+    "github"
+  ],
+  "environment": "Debug"
+}
