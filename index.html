@@ -1,1 +1,87 @@
-It Works.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App Build Summary</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #f8f9fa; }
+    .card-header { font-weight: bold; }
+    .commit-msg { font-size: 0.9rem; color: #555; }
+    .section-title {
+      border-bottom: 1px solid #dee2e6;
+      padding-bottom: 4px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-5">
+    <div class="card shadow">
+      <div class="card-header bg-primary text-white" id="app-title">Loading...</div>
+      <div class="card-body" id="build-content">
+        <p>Loading build information...</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const jsonURL = urlParams.get("json");
+
+    if (!jsonURL) {
+      document.getElementById('build-content').innerHTML = '<p class="text-danger">No JSON URL provided in query string.</p>';
+    } else {
+      fetch(jsonURL)
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById('app-title').textContent = `${data.name} – Build Summary`;
+          const content = `
+            <div class="mb-4">
+              <h5 class="section-title">App Information</h5>
+              <p><strong>Name:</strong> ${data.name}</p>
+              <p><strong>Identifier:</strong> ${data.identifier}</p>
+              <p><strong>Version:</strong> ${data.version} (Build ${data.build})</p>
+              <p><strong>Environment:</strong> ${data.environment}</p>
+            </div>
+            <div class="mb-4">
+              <h5 class="section-title">Latest Git Commits</h5>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <strong>App Commit:</strong> <code>${data.appLastGitCommitID.slice(0, 7)}</code><br>
+                  <span class="commit-msg">${data.appLastGitCommitMessage}</span>
+                </li>
+                <li class="list-group-item">
+                  <strong>Core Commit:</strong> <code>${data.coreLastGitCommitID.slice(0, 7)}</code><br>
+                  <span class="commit-msg">${data.coreLastGitCommitMessage}</span>
+                </li>
+                <li class="list-group-item">
+                  <strong>Acura SDK Commit:</strong> <code>${data.acuraSDKLastGitCommitID.slice(0, 7)}</code><br>
+                  <span class="commit-msg">${data.acuraSDKLastGitCommitMessage}</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mb-4">
+              <h5 class="section-title">Download</h5>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="${data.url}" class="btn btn-success" target="_blank">Download IPA</a>
+                <a href="${data.urlLocal}" class="btn btn-warning text-dark">Download IPA (Local)</a>
+                <a href="https://avanzagroup-my.sharepoint.com/:f:/g/personal/faiq_talat_avanzasolutions_com/ElvAuF3JaoVMiKwaVzmZbUUBoDv8eL4jV_BQ7G3l90DUEw?e=bk45DO" class="btn btn-outline-primary" target="_blank">All Builds</a>
+              </div>
+            </div>
+            <div class="mb-3">
+              <h5 class="section-title">Install via QR Code</h5>
+              <img src="${data.urlQRCode}" alt="QR Code" class="img-fluid" style="max-width: 200px;">
+            </div>
+          `;
+          document.getElementById('build-content').innerHTML = content;
+        })
+        .catch(error => {
+          document.getElementById('build-content').innerHTML = '<p class="text-danger">Failed to load build data.</p>';
+          console.error("Error loading JSON:", error);
+        });
+    }
+  </script>
+</body>
+</html>
