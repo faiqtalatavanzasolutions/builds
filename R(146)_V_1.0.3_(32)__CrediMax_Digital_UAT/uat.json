@@ -1,0 +1,19 @@
+{
+  "name": "CrediMax Digital UAT",
+  "version": "1.0.3",
+  "build": "32",
+  "identifier": "com.avanza.credimaxappuat",
+  "jsonURL": "https://mproxy.credimax.com.bh/credimax.json",
+  "export": [
+    "github",
+    "appstore"
+  ],
+  "config": {
+    "appstore": {
+      "applicationID": "6670163450",
+      "email": "faiq.talat@avanzasolutions.com",
+      "appstoreAppSpecificPassword": "payj-pkzz-qoxp-bqyw"
+    }
+  },
+  "environment": "UAT"
+}
